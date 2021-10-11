@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reserve.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>YBike</title>
+</head>
+<script defer src="../js/reserve.js"></script>
+<body>
+<!--Header-->
+    <div class="container">
+        <div class="up">
+                <img src="../assets/logo YBIKE.png" class="logo">
+                <div class="text">
+                    PT YBike Indonesia
+                </div>
+                <div class="searchbox">
+                    <input type="text" placeholder="Search Dealer">
+                </div> 
+        </div>
+        
+        <div class="down">
+            <div class="drop">
+                <ul>
+                    <li><a href="../html/home.html">Home</a></li>
+                    <li><a href="../html/product.html">Products</a></li>
+                    <li><a href="../html/gallery.html">Gallery</a></li>
+                    <li><a href="../html/reserve.html">Reserve</a></li>
+                    <li><i class="material-icons">menu</i>
+                        <ul class="drop2">
+                            <li><a href="company.html">Our Company</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="container1">
+        <div class="part1">
+            Reserve
+        </div>
+        <div class="part2">
+            <form action="" id="form">
+                <div class="input-div">
+                    <label for="product" class="label">Product</label>
+                    <select name="product" id="product">
+                        <option value="vixianR">Vixian R</option>
+                        <option value="vixian2021">Vixian 2021</option>
+                        <option value="kawaNinji">Kawasako Ninji ZX-6R ABS</option>
+                        <option value="kawaZ1000">Kawasako Z1000</option>
+                    </select>
+                </div>
+    
+                <div class="input-div">
+                    <label for="quantity" class="label">Quantity</label>
+                    <input type="number" name="quantity" id="quantity" min="1">
+                </div>
+        
+                <div class="input-div">
+                    <label for="color" class="label">Color</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+    
+                <div class="input-div">
+                    <label for="name" class="label">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+        
+                <div class="input-div">
+                    <label for="telephone" class="label">Telephone</label>
+                    <input type="tel" name="telephone" id="telephone">
+                </div>
+        
+                <div class="input-div">
+                    <label for="address" class="label">Address</label>
+                    <textarea name="address" id="address"></textarea>
+                </div>
+        
+                <div class="input-div">
+                    <label for="agreement" class="label">Agreement</label>
+                    <div class="answer">
+                        <input type="checkbox" name="agreement" id="agreement" required>
+                        <label for="agreement" class="agreement-text">I agree for the terms and conditions</label>
+                    </div> 
+                </div>
+                <button type="submit">Order</button>
+                <div id="error"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footer">
+            © 2021 PT YBike Indonesia
+        </div>
+    </div>
+</body>
+</html>
